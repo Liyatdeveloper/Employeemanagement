@@ -1,0 +1,41 @@
+{% extends 'Company/cmpny_home.html' %}
+{% block content %}
+
+
+<section class="w3l-contact-info-main" id="contact">
+    <div class="contact-sec editContent">
+ <div class="d-grid contact-view">
+    <h2>Employees</h2>
+    <br>
+<div class="row">
+                <table class="table">
+                    <tr>
+                        <th>Sl.No.</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Company</th>
+                        
+                    </tr>
+                    {% for x in var %}
+                    <tr>
+                        <td>{{forloop.counter}}</td>
+                        <td>{{x.fname}} {{x.lname}}</td>
+                        <td>{{x.email}}</td>
+                        <td>{{x.phone}}</td>
+                        <td>{{x.company.name}}</td>
+                        
+
+                    </tr>
+                    {% endfor %}
+                </table>
+
+    <div class="map-iframe col-lg-6">
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+
+{% endblock %}

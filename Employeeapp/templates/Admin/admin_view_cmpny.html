@@ -1,0 +1,42 @@
+{% extends 'Admin/admin_home.html' %}
+{% block content %}
+
+
+<section class="w3l-contact-info-main" id="contact">
+    <div class="contact-sec editContent">
+ <div class="d-grid contact-view">
+    <h2>All Companies</h2>
+    <br>
+<div class="row">
+
+                <table class="table">
+                	<tr>
+                		<th>Sl.No.</th>
+                		<th>Company Name</th>
+                		<th>Email</th>
+                		<th>Website</th>
+                		<th></th>
+                		<th></th>
+                	</tr>
+                	{% for x in var %}
+                	<tr>
+                		<td>{{forloop.counter}}</td>
+                		<td>{{x.name}}</td>
+                		<td>{{x.email}}</td>
+                		<td>{{x.website}}</td>
+                		<td><a href="/admin_edit_cmpny/?id={{x.id}}" class="btn btn-success">EDIT</a></td>
+                		<td><a href="/admin_delete_cmpny/?id={{x.id}}" class="btn btn-danger">DELETE</a></td>
+
+                	</tr>
+                	{% endfor %}
+                </table>
+
+    <div class="map-iframe col-lg-6">
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+
+{% endblock %}

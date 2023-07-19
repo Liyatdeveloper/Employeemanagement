@@ -1,0 +1,48 @@
+{% extends 'about.html' %}
+{% block content %}
+
+
+<section class="w3l-contact-info-main" id="contact">
+    <div class="contact-sec editContent">
+ <div class="d-grid contact-view">
+    <h2>Employee Register...</h2>
+    <br>
+<div class="row">
+
+                <div class="map-content-9 col-lg-6">
+                    <form action="/emp_register/" method="post">
+                        {% csrf_token %}
+
+                        <div class="twice-two">
+                            <input type="text" class="form-control" name="fname" id="w3lName" placeholder="First Name" required="" pattern="[A-Za-z\s]{1,30}" maxlength="30">
+                            <input type="text" class="form-control" name="lname" id="w3lSender" placeholder="Last Name" required="" pattern="[A-Za-z\s]{1,30}" maxlength="30">
+                        </div>
+                        <div class="twice-two">
+                            <input type="text" class="form-control" name="phone" id="w3lName" placeholder="Phone" required="" pattern="[0-9]{10,10}" maxlength="10" minlength="10">
+                            <input type="password" class="form-control" name="pswd" id="w3lSender" placeholder="Password" required="" minlength="8" maxlength="8">
+                        </div>
+                        <div class="twice">
+                            <input type="email" class="form-control" name="email" id="w3lSubject" placeholder="Email" required="" >
+                        </div>
+                        <div class="twice">
+                           
+                            <select class="form-control" name="company" id="w3lSubject" required="">
+                                <option selected="" disabled="">Select Company</option>
+                                {% for x in var %}
+                                <option value="{{x.id}}">{{x.name}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-contact">Register</button>
+                    </form>
+                </div>
+    <div class="map-iframe col-lg-6">
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+
+{% endblock %}

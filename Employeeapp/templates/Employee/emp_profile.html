@@ -1,0 +1,40 @@
+{% extends 'Employee/emp_home.html' %}
+{% block content %}
+
+
+<section class="w3l-contact-info-main" id="contact">
+    <div class="contact-sec editContent">
+ <div class="d-grid contact-view">
+    <h2>Profile</h2>
+    <br>
+<div class="row">
+
+                <table class="table">
+                    {% for x in var %}
+                	<tr>
+                     <td>Full Name:</td> <td>{{x.fname}} {{x.lname}}</td>  
+                    </tr>
+                    <tr>
+                     <td>Phone:</td> <td>{{x.phone}}</td>  
+                    </tr>
+                    <tr>
+                     <td>Email:</td> <td>{{x.email}}</td>  
+                    </tr>
+                    <tr>
+                     <td>Password:</td> <td>{{x.pswd}}</td>  
+                    </tr>
+                     <tr>
+                     <td>Company:</td> <td>{{x.company.name}}</td>  
+                    </tr>
+                    {% endfor %}
+                </table>
+
+    <div class="map-iframe col-lg-6">
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+
+{% endblock %}

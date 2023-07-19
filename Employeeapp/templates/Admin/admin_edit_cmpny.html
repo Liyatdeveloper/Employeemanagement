@@ -1,0 +1,42 @@
+{% extends 'Admin/admin_home.html' %}
+{% block content %}
+
+
+<section class="w3l-contact-info-main" id="contact">
+    <div class="contact-sec editContent">
+ <div class="d-grid contact-view">
+    <h2>Company Update Data</h2>
+    <br>
+<div class="row">
+
+                <div class="map-content-9 col-lg-6">
+                    <form action="/admin_edit_cmpny/" method="post">
+                        {% csrf_token %}
+
+                        {% for x in var %}
+                        <input type="hidden" name="cmp_id" value="{{cmp_id}}">
+                        <div class="twice-two">
+                            <input type="text" class="form-control" name="name" id="w3lName" placeholder="Company Name" required="" pattern="[A-Za-z\s]{1,30}" maxlength="30" value="{{x.name}}">
+                            <input type="email" class="form-control" name="email" id="w3lSender" placeholder="Company Email" required="" value="{{x.email}}">
+                        </div>
+                        
+                        <div class="twice">
+                            <input type="text" class="form-control" name="pswd" id="w3lSubject" placeholder=" Password" required="" minlength="8" maxlength="8" value="{{x.pswd}}">
+                        </div>
+                        <div class="twice">
+                            <input type="text" class="form-control" name="website" id="w3lSubject" placeholder="Website" required="" value="{{x.website}}">
+                        </div>
+                        <button type="submit" class="btn btn-contact">Update</button>
+                        <a href="/admin_view_cmpny/"><button type="button" class="btn btn-contact" style="float: left !important;">Cancel</button></a>
+                        {% endfor %}
+                    </form>
+                </div>
+    <div class="map-iframe col-lg-6">
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+
+{% endblock %}

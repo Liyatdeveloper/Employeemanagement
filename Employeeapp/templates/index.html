@@ -1,0 +1,262 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>EmployeeManagement</title>
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="/static/css/style-starter.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body id="home">
+<section class=" w3l-header-4 header-sticky">
+    <header class="absolute-top">
+        <div class="container-fluid pr-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <h1><a class="navbar-brand" href="#">
+              <!-- <span class="fa fa-university mr-1" aria-hidden="true"></span> -->
+            EmployeeManagement</a></h1>
+            <button class="navbar-toggler bg-gradient collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fa icon-expand fa-bars"></span>
+				<span class="fa icon-close fa-times"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item @@about__active">
+                        <a class="nav-link" href="/about/">About</a>
+                    </li> 
+                    <li class="nav-item dropdown @@pages__active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Register
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/register/">Company</a><br>
+                            <a class="dropdown-item" href="/emp_register/">Employee</a>
+                        </div>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ml-lg-3">
+                        <a href="/login/" class=" book btn btn-style">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </nav>
+    </div>
+      </header>
+</section>
+
+<script src="/static/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+<!--bootstrap working-->
+<script src="/static/js/bootstrap.min.js"></script>
+<!-- //bootstrap working-->
+<!-- disable body scroll which navbar is in active -->
+<script>
+$(function () {
+  $('.navbar-toggler').click(function () {
+    $('body').toggleClass('noscroll');
+  })
+});
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<section class="w3l-main-slider" id="home">
+  <!-- main-slider -->
+  <div class="companies20-content">
+    
+    <div class="owl-one owl-carousel owl-theme">
+      <div class="item text-center">
+        <li>
+          <div class="slider-info banner-view bg bg2" data-selector=".bg.bg2">
+            <div class="banner-info">
+              <div class="container">
+                <div class="banner-info-bg mr-auto">
+                  <h5>Connecting all your
+                     needs </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+      <div class="item text-center">
+        <li>
+          <div class="slider-info  banner-view banner-top1 bg bg2" data-selector=".bg.bg2">
+            <div class="banner-info">
+              <div class="container">
+                <div class="banner-info-bg mr-auto">
+                  <h5>Connecting all your
+                     needs </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+      <div class="item text-center">
+        <li>
+          <div class="slider-info  banner-view banner-top2 bg bg2" data-selector=".bg.bg2">
+            <div class="banner-info">
+              <div class="container">
+                <div class="banner-info-bg mr-auto">
+                  <h5>Connecting all your
+                     needs </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+    </div>
+  </div>
+  <script src="/static/js/owl.carousel.js"></script>
+  <!-- script for -->
+  <script>
+    $(document).ready(function () {
+      $('.owl-one').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        responsiveClass: true,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          480: {
+            items: 1,
+            nav: false
+          },
+          667: {
+            items: 1,
+            nav: true
+          },
+          1000: {
+            items: 1,
+            nav: true
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script -->
+  <!-- /main-slider -->
+</section>
+
+<section class="w3l-teams-15">
+	<div class="team-single-main editContent">
+		<div class="container">
+
+		<div  class="row">
+				<div class="column2 image-text col-lg-6">
+					<div class="nature-row editContent">
+						<h5><a href="#page" >
+							Progressive Percentage</a></h5>
+					<p class="para editContent text ">
+						Mollitia placeat modi explicabo voluptatum corporis unde Dicta, provident
+						Rem adipisci Mollitia placeat modi.</p>
+					</div>
+					<div class="nature-row editContent">
+						<h5><a href="#page">
+							Easy Documentation</a></h5>
+					<p class="para editContent text ">
+						Mollitia placeat modi explicabo voluptatum corporis unde Dicta, provident
+						Rem adipisci Mollitia placeat modi.</p>
+					</div>
+					<div class="nature-row editContent">
+						<h5><a href="#page">
+							Competitive Percentage</a></h5>
+					<p class="para editContent text ">
+						Mollitia placeat modi explicabo voluptatum corporis unde Dicta, provident
+						Rem adipisci Mollitia placeat modi.</p>
+					</div>
+				</div>
+			<div class="column2 image-text col-lg-6">
+				<img src="/static/images/b1.jpg" alt="product" class="img-responsive ">
+			</div>
+		</div>
+		</div>
+		</div>
+	</div>
+</section>
+
+<section class="w3l-footer-29-main">
+	<div class="footer-29 py-5">
+	  <div class="container">
+		<div class="row footer-top-29">
+		  <div class="col-lg-4 col-md-6 col-sm-8 footer-list-29 footer-1">
+			<div class="left-side">
+				<h2><a href="/" class="footer-logo"><span class=" mr-1" aria-hidden="true"></span>EmployeeManagement</a></h2>
+			</div>
+		  </div>
+		  <div class="col-lg-3 col-md-3 col-sm-4 footer-list-29 footer-2 ">
+		
+		  </div>
+		  <div class="col-lg-3 col-md-3 col-sm-6 footer-list-29 footer-2 ">
+			<ul>
+        <h6 class="footer-title-29">Links</h6>
+        <li><a href="#page">Home</a></li>
+        <li><a href="#page">Register</a></li>
+        <li><a href="#page">Login</a></li>
+        </ul>
+		  </div>
+		  <div class="col-lg-2 col-md-3 col-sm-6 footer-list-29 footer-2 ">
+			
+		  </div>
+		</div>
+	</div>
+  </section>
+  <section class="w3l-footer-29-main w3l-copyright">
+	<div class="container">
+	  <div class=" bottom-copies text-center">
+		<p class="copy-footer-29">© 2023 EmployeeManagement. All rights reserved | Designed by <a href="#">WebDesigner</a></p>
+	  </div>
+	</div>
+  </section>
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" title="Go to top">
+	<span class="fa fa-long-arrow-up"></span>
+</button>
+<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () {
+		scrollFunction()
+	};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("movetop").style.display = "block";
+		} else {
+			document.getElementById("movetop").style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+<!-- /move top -->
+</body>
+
+</html>

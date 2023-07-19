@@ -1,0 +1,33 @@
+{% extends 'about.html' %}
+{% block content %}
+
+
+<section class="w3l-contact-info-main" id="contact">
+    <div class="contact-sec editContent">
+ <div class="d-grid contact-view">
+    <h2>Login Now..</h2>
+    <br>
+<div class="row">
+                <div class="map-content-9 col-lg-6">
+                    <form action="/login/" method="post">
+                        {% csrf_token %}
+                        
+                        <div class="twice">
+                            <input type="email" class="form-control" name="email" id="w3lSender" placeholder="Email" required="">
+                             
+                        </div>
+                        <div class="twice">
+                             <input type="password" class="form-control" name="pswd" id="w3lName" placeholder="Password" required="">
+                        </div>
+                        <button type="submit" class="btn btn-contact">Login</button>
+                    </form>
+                </div>
+    <div class="map-iframe col-lg-6">
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+
+{% endblock %}
